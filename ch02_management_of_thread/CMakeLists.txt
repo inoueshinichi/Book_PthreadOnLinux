@@ -27,3 +27,21 @@ add_executable(FirstThread2_1
 target_link_libraries(FirstThread2_1
     PRIVATE Threads::Threads
 )
+
+# 3
+add_executable(FirstThread3
+    first_thread3.cpp
+)
+
+target_link_libraries(FirstThread3
+    PRIVATE Threads::Threads
+)
+
+# 4
+add_executable(FirstThread4
+    first_thread4.cpp
+)
+
+target_link_libraries(FirstThread4
+    PRIVATE Threads::Threads
+)
