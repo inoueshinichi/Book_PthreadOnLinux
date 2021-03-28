@@ -45,3 +45,31 @@ add_executable(FirstThread4
 target_link_libraries(FirstThread4
     PRIVATE Threads::Threads
 )
+
+# attr
+add_executable(FirstThreadAttr
+    first_thread_attr.cpp
+)
+
+target_link_libraries(FirstThreadAttr
+    PRIVATE Threads::Threads
+)
+
+# cancel other thread bad style
+add_executable(CancelOtherThreadBadStyle
+    cancel_other_thread_bad_style.cpp
+)
+
+target_link_libraries(CancelOtherThreadBadStyle
+    PRIVATE Threads::Threads
+)
+
+
+# cancel other thread good style
+add_executable(CancelOtherThreadGoodStyle
+    cancel_other_thread_good_style.cpp
+)
+
+target_link_libraries(CancelOtherThreadGoodStyle
+    PRIVATE Threads::Threads
+)
