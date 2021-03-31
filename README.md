@@ -27,6 +27,29 @@ pthread関数の一覧(抜粋)</br>
 | | **pthread_cond_wait** | **条件変数が有効になるのを待つ** | - |
 | | **pthread_cond_timewait** | **条件変数が有効になるのを待つ** | 時間制限あり |
 | | pthread_rwlock_init | read/writeロックの初期化 | - |
+| | pthread_rwlock_destroy | read/writeロックの破棄 | - |
+| | pthread_rwlock_rdlock | readロック | - |
+| | pthread_rwlock_wrlock | writeロック | - |
+| | pthread_rwlock_tryrdlock | readロック | ブロックなし |
+| | pthread_rwlock_trywrlock | writeロック | ブロックなし |
+| | pthread_rwlock_unlock | read/writeロックの解除 | - |
+| | pthread_rwlockattr_init | read/writeロック属性の初期化 | - |
+| | pthread_rwlockattr_destroy | read/writeロック属性の破棄 | - |
+| | pthread_rwlockattr_getpshared | read/writeロックスコープの獲得 | - |
+| | pthread_rwlockattr_setpshared | read/writeロックスコープの設定 | - |
+| 3.イベント通知 | **pthread_cond_init** | **条件変数の初期化** | - |
+| | **pthread_cond_destroy** | **条件変数の破棄** | - |
+| | **pthread_cond_signal** | **条件変数を有効にする** | - |
+| | pthraed_cond_broadcast | 条件変数を有効にする | 一斉通知 |
+| | pthraed_condattr_init | 条件変数属性の初期化 | - |
+| | pthread_condattr_destroy | 条件変数属性の破棄 | - |
+| | pthread_condattr_getpshared | 条件変数スコープの獲得 | - |
+| | pthread_condattr_setpshared | 条件変数スコープの設定 | - |
+| 4.動作の一時停止 | - | - | pthreadライブラリ内にはない |
+| 分類外 | pthread_key_create | スレッドローカル変数の作成 | - |
+| | pthread_key_delete | スレッドローカル変数の破棄 | - |
+| | pthread_getspecific | スレッドローカル変数の獲得 | - |
+| | pthread_setspecific | スレッドローカル変数の設定 | - |
 
 スレッド間で共有できるリソース</br>
 1. ファイルディスクリプタ</br>
