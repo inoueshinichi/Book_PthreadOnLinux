@@ -1,7 +1,7 @@
 /**
  * @file main_variables.cpp
  * @author your name (you@domain.com)
- * @brief 
+ * @brief スレッド間で共有する変数(グローバル変数、ローカル変数)
  * @version 0.1
  * @date 2021-04-01
  * 
