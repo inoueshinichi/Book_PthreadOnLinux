@@ -1,7 +1,8 @@
-# PthreadsOnLinux
-Linuxとpthreadsによるマルチスレッド</br>
+# PthreadsOnLinux  
+Linuxとpthreadsによるマルチスレッド  
+https://www.shuwasystem.co.jp/book/9784798053721.html  
 
-pthread関数の一覧(抜粋)</br>
+pthread関数の一覧(抜粋)
 | 分類 | 関数名 | 内容 | 備考 |
 | :--- | :--- | :--- | :--- |
 | 1.スレッドの管理 | **pthread_create** | **スレッド生成** | 実行開始もする |
